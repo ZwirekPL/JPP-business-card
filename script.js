@@ -93,21 +93,39 @@ $(document).on('scroll', function () {
     }
   })
   // uzupelnanie strony navem 
-  const imghead = document.querySelector('.headerjpg');
-  const vhValue = window.innerHeight;
-  // console.log(vhValue + 'vhvalue');
-  const imgValue = imghead.offsetHeight;
-  // console.log(imgValue + 'imgvalue');
-  const imgHeadWidth = imghead.offsetWidth;
-  // console.log(imgHeadWidth + 'imgwidht');
 
-  const menuHeight = (vhValue - imgValue) + 'px';
-  // console.log(menuHeight + 'menuheght');
-  document.querySelector('.nav').style.height = [(vhValue-imgValue)>= 75 ? `${76}px` : menuHeight];
-  document.querySelector('.header').style.height = `${imgValue}px`;
+  // POPRAWIĆ BO POKAZUJE 0PX na HEADER
+
+
+
+  const jpgHeader = document.querySelector('.headerjpg');
+  console.log(jpgHeader.style.height + 'tutaj')
+
+  const windowHeight = window.innerHeight;
+  console.log(windowHeight + ' windowHeight');
+
+  const jpgHeaderHeight = jpgHeader.offsetHeight;
+  console.log(jpgHeaderHeight + ' jpgHeaderHeight blad');
+
+  const jpgHeaderWidth = jpgHeader.offsetWidth;
+  console.log(jpgHeaderWidth + ' jpgHeaderWidth');
+
+  const menuHeight = (windowHeight - jpgHeaderHeight) + 'px';
+  console.log(menuHeight + ' menuHeight');
+
+
+
+
+
+  document.querySelector('.nav').style.height = [(windowHeight-jpgHeaderHeight)>= 75 ? `${76}px` : menuHeight];
+  // document.querySelector('.header').style.height = `${jpgHeaderHeight}px`;
   
+  // [jpgHeaderHeight>0 ? `${jpgHeaderHeight}px` : `${90}vh`];
 
 
+
+
+// Dark mode 
 
   const jpgDark = document.querySelector('.jpgDark');
   document.querySelector('.btnDarkMode').addEventListener('click', (e) => {
@@ -115,7 +133,18 @@ $(document).on('scroll', function () {
     jpgDark.classList.toggle('jpgDark-active');
     e.target.blur();
     localStorage.setItem('dark-mode', darkMode);
-    });
+  });
+
+  // Dark mode End
+  // Dark mode burger 
+  const jpgDarkHam = document.querySelector('.jpgDark');
+  document.querySelector('.btnDarkModeHam').addEventListener('click', (e) => {
+    const darkModeHam = document.body.classList.toggle('darkModeHam');
+    jpgDarkHam.classList.toggle('jpgDarkHam-active');
+    e.target.blur();
+    localStorage.setItem('dark-mode', darkMode);
+  });
+  // Dark mode burger end
 
 
   // hamburger
