@@ -19,7 +19,7 @@ $(document).on('scroll', function () {
 
     const windowHeight = $(window).height();
     const scrollValue = $(this).scrollTop();
-    console.log(windowHeight);
+    // console.log(windowHeight);
   
   
     //Pierwsza sekcja
@@ -42,22 +42,22 @@ $(document).on('scroll', function () {
   
   
     if (scrollValue > meInFromTop + meInHeight - windowHeight) {
-      console.log("jestem meIn wywietlony w całości");
+      // console.log("jestem meIn wywietlony w całości");
       $meIn.addClass('active');
     }
   
     if (scrollValue > eduInFromTop + eduInHeight - windowHeight) {
-      console.log("jestem eduIn wywietlony w całości");
+      // console.log("jestem eduIn wywietlony w całości");
       $eduIn.addClass('active');
     }
 
     if (scrollValue > evInFromTop + evInHeight - windowHeight) {
-        console.log("jestem evIn wywietlony w całości");
+        // console.log("jestem evIn wywietlony w całości");
         $evIn.addClass('active');
     }
 
     if (scrollValue > evkonInFromTop + evkonInHeight - windowHeight) {
-        console.log("jestem evkonIn wywietlony w całości");
+        // console.log("jestem evkonIn wywietlony w całości");
         $evkonIn.addClass('active');
     }
   
@@ -78,13 +78,24 @@ $(document).on('scroll', function () {
   
     if (scrollValue > detInFromTop + detInHeight / 2 - windowHeight) {
       $detIn.addClass('active');
-      console.log('załączeni animacji detIn');
+      // console.log('załączeni animacji detIn');
     }
   
     if (scrollValue > achievFromTop + achievHeight / 2 - windowHeight) {
         $achiev.addClass('active');
-        console.log('załączeni animacji achiev');
+        // console.log('załączeni animacji achiev');
     }
+
+
+    // proba 
+
+    // document.addEventListener("touchmove", e => {
+      // https://developer.mozilla.org/en-US/docs/Web/API/Touch/pageY
+
+
+      // const wrap = document.querySelector('.wrap');
+
+    } )
     
   
     //Czyściciel
@@ -99,19 +110,19 @@ $(document).on('scroll', function () {
 
 
   const jpgHeader = document.querySelector('.headerjpg');
-  console.log(jpgHeader.style.height + 'tutaj')
+  // console.log(jpgHeader.style.height + 'tutaj')
 
   const windowHeight = window.innerHeight;
-  console.log(windowHeight + ' windowHeight');
+  // console.log(windowHeight + ' windowHeight');
 
   const jpgHeaderHeight = jpgHeader.offsetHeight;
-  console.log(jpgHeaderHeight + ' jpgHeaderHeight blad');
+  // console.log(jpgHeaderHeight + ' jpgHeaderHeight blad');
 
   const jpgHeaderWidth = jpgHeader.offsetWidth;
-  console.log(jpgHeaderWidth + ' jpgHeaderWidth');
+  // console.log(jpgHeaderWidth + ' jpgHeaderWidth');
 
   const menuHeight = (windowHeight - jpgHeaderHeight) + 'px';
-  console.log(menuHeight + ' menuHeight');
+  // console.log(menuHeight + ' menuHeight');
 
 
 

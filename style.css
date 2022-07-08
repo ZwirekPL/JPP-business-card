@@ -833,7 +833,7 @@ transform: translateX(0);
     } */
     :root{
         --maxWidth930: 500px;
-        --btnDarkMenu: 0px 30px 0px 0px;
+        --btnDarkMenu: 0px 20px 0px 0px;
     }
     img.personalPhoto{
         max-height: 17vh;
@@ -842,7 +842,7 @@ transform: translateX(0);
         border-radius: 5%;
     }
     div.header{
-        height: 24vh;
+        height: 38vw;
     }
     .personalInfoHead{
         max-height: 45px;
@@ -885,6 +885,11 @@ transform: translateX(0);
         max-height: 33vh;
         max-width: 20vw;
     }
+    .footer a{
+        font-size: 1vw;
+
+    }
+  
 
     
 
@@ -909,7 +914,11 @@ transform: translateX(0);
         transition: none;
     }
     div.header{
-        height: 50vh;
+        height: 39vw;
+    }
+    .footer a{
+        font-size: 1vw;
+
     }
   
 }
@@ -921,7 +930,14 @@ transform: translateX(0);
         --maxWidth930: 800px;
     }
     div.header{
-        height: 62vh;
+        height: 38vw;
+    }
+    .btnDarkMode{
+        font-size: var(--menuFontSize);
+    }
+    .footer a{
+        font-size: 1vw;
+
     }
 }
 @media only screen and (min-width: 1401px){
@@ -930,6 +946,13 @@ transform: translateX(0);
     } */
     :root{
         --maxWidth930: 1100px;
+    }
+    .btnDarkMode{
+        font-size: var(--menuFontSize);
+    }
+    .footer a{
+        font-size: 1vw;
+
     }
 
 
