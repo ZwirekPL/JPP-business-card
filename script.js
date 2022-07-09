@@ -15,7 +15,18 @@
 // })
 
 
-$(document).on('scroll', function () {
+
+
+
+// const screenWidth = $(window).width();
+// const meInMob = document.querySelector(".meIn");
+// const eduInMob = document.querySelector(".eduIn");
+// const evInMob = document.querySelector(".evIn");
+// const evkonInMob = document.querySelector(".evkonIn");
+// // console.log(screenWidth);
+// if (screenWidth < 770 ){
+
+  $(document).on('scroll', function () {
 
     const windowHeight = $(window).height();
     const scrollValue = $(this).scrollTop();
@@ -86,16 +97,6 @@ $(document).on('scroll', function () {
         // console.log('załączeni animacji achiev');
     }
 
-
-    // proba 
-
-    // document.addEventListener("touchmove", e => {
-      // https://developer.mozilla.org/en-US/docs/Web/API/Touch/pageY
-
-
-      // const wrap = document.querySelector('.wrap');
-
-    } )
     
   
     //Czyściciel
@@ -103,10 +104,15 @@ $(document).on('scroll', function () {
       $('div').removeClass('active');
     }
   })
+// }
+// else{
+//   meInMob.classList.addClass('active');
+//   eduInMob.classList.addClass('active');
+//   evInMob.classList.addClass('active');
+//   evkonInMob.classList.addClass('active');
+
+// }
   // uzupelnanie strony navem 
-
-  // POPRAWIĆ BO POKAZUJE 0PX na HEADER
-
 
 
   const jpgHeader = document.querySelector('.headerjpg');
