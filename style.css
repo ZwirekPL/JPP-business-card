@@ -603,7 +603,21 @@ section.detailing div.detIn{
     transition: .8s linear;
 
 }
+div.detInGal{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: .8s linear;
+
+}
 section.detailing div.detIn.active {
+    transform: scale(1);
+}
+div.detInGal.active {
     transform: scale(1);
    }
 div.detInfoHead{
@@ -615,6 +629,7 @@ div.detInfoHead{
     
     
 }
+
 div.gallery{
     display: flex;
     flex-wrap: wrap;
@@ -861,6 +876,9 @@ transform: translateX(0);
         height: 20vh;
     }
     section.detailing div.detIn{
+        height: 20vh;
+    }
+    div.detInGal{
         height: 20vh;
     }
     section.ev div.evIn{
