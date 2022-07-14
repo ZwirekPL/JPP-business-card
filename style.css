@@ -28,12 +28,12 @@
 }
 body {
     /* overflow-x: hidden; */
-    position: relative;
+    /* position: relative; */
     background-color: var(--backgroundColorBody);
 }
-html, body {
+/* html, body {
     overflow-x: hidden;
-  }
+  } */
 
 div.wrap {
   
@@ -99,7 +99,7 @@ div.header {
 /* hamburger */
 
 .burg {
-    position: absolute;///
+    position: absolute;
     top:2vh;
     right: 3vw;
     margin: 0;
@@ -125,7 +125,7 @@ div.header {
     position: absolute;
     width: 40px;
     height: 6px;
-    background-color: var(--backgroundColor);
+    background-color: var(--colorText);
     transition: transform 220ms ease-in-out;
   }
   .burg__bars::before, .burg__bars::after {
@@ -133,7 +133,7 @@ div.header {
     position: absolute;
     width: 40px;
     height: 6px;
-    background-color:var(--backgroundColor);
+    background-color:var(--colorText);
     content: '';
   }
   .burg__bars::before {
@@ -163,7 +163,7 @@ div.header {
   }
 .mobileMenu{
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top:0;
     right: 6vw;
@@ -176,7 +176,6 @@ div.header {
     
 
 }
-
 
 
 .menuHam{
@@ -294,6 +293,17 @@ div.header {
     padding: 10px;
     font-size: 80%;
 }
+.darkModeMobile{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 5vw;
+    top: 3vh;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
 .btnDarkModeHam{
     display: block;
     position: absolute;
@@ -301,15 +311,15 @@ div.header {
     padding: 0 10px;
     text-transform: uppercase;
     border: none;
-    color: var(--colorTextNavGrey);
+    color: var(--colorText);
     font-size: var(--burgerFS);
     background-color:transparent;
     cursor: pointer;
     transition: 0.3s;
 }
-.btnDarkModeHam:hover {
+/* .btnDarkModeHam:hover {
     color: rgb(35, 35, 35);
-}
+} */
 .darkModeHam{
     --colorTextNav: white;
     --colorText: rgb(186, 186, 186);
@@ -793,6 +803,10 @@ div.footer {
     font-size: 0.75vw;
 
 }
+.contact{
+    display: block;
+    dopisac tu bo trzba 
+}
 section.me .meIn.active,
 section.me .eduIn.active,
 section.me .achiev.active,
@@ -822,11 +836,22 @@ transform: translateX(0);
     :root{
         --maxWidth930: 320px;
     }
+    body {
+        /* overflow-x: hidden; */
+        position: relative;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+    
     div.nav{
         display: none;
     }
     .mobileMenu{
         display: block ;
+    }
+    .darkModeMobile{
+        display: block;
     }
     .headerjpg{
         display: none;
@@ -838,6 +863,9 @@ transform: translateX(0);
         right: 9vw;
         max-height: 100vw;
         max-width: 80vw;
+    }
+    .darkModeMobile{
+        display: block;
     }
 
     div.header{
@@ -1001,6 +1029,13 @@ transform: translateX(0);
     :root{
         --maxWidth930: 320px;
     }
+    body {
+        /* overflow-x: hidden; */
+        position: relative;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
     div.nav{
         display: none;
     }
@@ -1014,13 +1049,18 @@ transform: translateX(0);
         max-height: 90vh;
         max-width: 80vw;
     }
+    .darkModeMobile{
+        display: block;
+    }
     .headerjpg{
         display: none;
     }
     .headerMobile{
         display: flex;
     }
-
+    .darkModeMobile{
+        display: block;
+    }
 
     div.header{
         height: 140vh;
@@ -1183,6 +1223,13 @@ transform: translateX(0);
     :root{
         --maxWidth930: 320px;
     }
+    body {
+        /* overflow-x: hidden; */
+        position: relative;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
     div.nav{
         display: none;
     }
@@ -1199,6 +1246,9 @@ transform: translateX(0);
         right: 9vw;
         max-height: 100vw;
         max-width: 80vw;
+    }
+    .darkModeMobile{
+        display: block;
     }
 
     div.header{
@@ -1362,6 +1412,13 @@ transform: translateX(0);
     :root{
         --maxWidth930: 320px;
     }
+    body {
+        /* overflow-x: hidden; */
+        position: relative;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
     div.nav{
         display: none;
     }
@@ -1378,6 +1435,9 @@ transform: translateX(0);
         right: 9vw;
         max-height: 100vw;
         max-width: 80vw;
+    }
+    .darkModeMobile{
+        display: block;
     }
 
     div.header{
@@ -1541,6 +1601,13 @@ transform: translateX(0);
     :root{
         --maxWidth930: 481px;
     }
+    body {
+        /* overflow-x: hidden; */
+        position: relative;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
     div.nav{
         display: none;
     }
@@ -1552,6 +1619,9 @@ transform: translateX(0);
     }
     .headerMobile{
         display: flex;
+    }
+    .darkModeMobile{
+        display: block;
     }
     div.header{
         height: 100vh;
@@ -1699,6 +1769,8 @@ transform: translateX(0);
     }
 }
 
+
+
 @media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape){
     /* div.wrap {
         max-width: 769px;
@@ -1707,16 +1779,26 @@ transform: translateX(0);
         --maxWidth930: 500px;
         --btnDarkMenu: 0px 20px 0px 0px;
     }
+    body {
+        /* overflow-x: hidden; */
+        position: relative;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
     div.nav{
         display: none;
     }
     .mobileMenu{
         display: block;
-        right: 9vw;
+        right: 10vw;
         top: 3vh;
         margin: auto;
         max-height: 73vh;
         max-width: 50vw;
+    }
+    .darkModeMobile{
+        display: block;
     }
     .meHam{
         font-size: calc(var(--burgerFS)/2);       
@@ -1731,8 +1813,8 @@ transform: translateX(0);
         font-size: calc(var(--burgerFS)/2);       
     }
     .btnDarkModeHam{
-        font-size: calc(var(--burgerFS)/2);
-        left: 50px;
+        font-size: calc(var(--burgerFS)/1.5);
+        left: 1vw;
     }
     .headerjpg{
         display: block;
@@ -1845,7 +1927,7 @@ transform: translateX(0);
         margin: 0 125px;
     }
     section.ev div.evIn {
-        height: 150vh;
+        height: 130vh;
     }
     div.evInfo p {
         margin: auto;
@@ -1885,7 +1967,6 @@ transform: translateX(0);
         text-align: center;
     }
 }
-
 
 
 
@@ -2076,6 +2157,7 @@ transform: translateX(0);
     .btnDarkMode{
         padding: 0;
     }
+  
     img.personalPhoto{
         max-height: 17vw;
         max-width: 20vw;
@@ -2083,10 +2165,10 @@ transform: translateX(0);
         border-radius: 5%;
     }
     .headerjpg{
-        height: 45vw;
+        height: 40vw;
     }
     div.header{
-        height: 45vw;
+        height: 40vw;
     }
     img.personalPhoto {
         max-height: 30vw;
@@ -2188,8 +2270,8 @@ transform: translateX(0);
 
 
     img.evPhoto {
-        max-height: 50vw;
-        max-width: 50vw;
+        max-height: 45vw;
+        max-width: 45vw;
         /* flex-basis: auto; */
         margin: 30px; 
     }
@@ -2197,7 +2279,7 @@ transform: translateX(0);
         height: 100vh;
     }
     div.evInfo p {
-        margin: auto;
+        margin-left: 30px;
         font-size: calc(var(--sectionFontSize)*2);
         width: 90%;
         text-align: justify;
@@ -2256,6 +2338,21 @@ transform: translateX(0);
     div.header{
         height: 39vw;
     }
+    img.headerjpg{
+        height: 39vw;
+    }
+    .btnDarkMode{
+        margin: 0 50px 0 0 ;
+    }
+    img.personalPhoto{
+        max-height: 20vw;
+    }
+    img.eduPhoto{
+        max-height: 12vw;
+    }
+    img.evPhoto{
+        max-height:14vw;
+    }
     .footer a{
         font-size: 1vw;
 
@@ -2289,6 +2386,15 @@ transform: translateX(0);
     }
     .btnDarkMode{
         font-size: var(--menuFontSize);
+    }
+    img.headerjpg{
+        height:80vh;
+    }
+    img.eduPhoto{
+        height: 25vh;
+    }
+    img.evPhoto{
+        height: 17vh;
     }
     .footer a{
         font-size: 1vw;

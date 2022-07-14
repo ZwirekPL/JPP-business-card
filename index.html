@@ -31,7 +31,7 @@
             </ul>
         </div>
         <div class="main">
-            <section id="me" class="me">
+            <section id="meHam" class="me">
                 <div class="meIn">
                     <div class="personalInfoHead"><h2>informacje o mnie</h2></div>
                     <div><img class="personalPhoto" src="img/zdjecieOsobiste.jpg" alt="Jakub Pilch-Pilchowicz"></div>
@@ -66,7 +66,7 @@
                     </ul></div>
                 </div>
             </section>
-            <section id="detailing" class="detailing">
+            <section id="detHam" class="detailing">
                 <div class="detIn">
                     <div class="detInfoHead"><h2>detailing</h2></div>
                     <div><img class="detPhoto" src="img/detPhoto.jpg" alt="Detailing"></div>
@@ -224,7 +224,7 @@
                     </div>
                 </div>
             </section>
-            <section id="ev" class="ev">
+            <section id="evHam" class="ev">
                 <div class="evIn">
                     <div class="evInfoHead"><h2>elektromobilność</h2></div>
                     <div><img class="evPhoto" src="img/evcar.jpg" alt="Elektromobilność"></div>
@@ -240,19 +240,20 @@
                 </div>
                 <div class="achiev">
         </section>
-            <section id="contact" class="contact"></section>
+            <section id="conHam" class="contact"></section>
         </div>
         <div class="footer"><a href="Wirgiliusz Ładziński">&copy; all rights reserved Wirgiliusz Ładziński</a></div>
     </div>
-    <div class="mobileMenu">
+    <div class="darkModeMobile">
         <button class="btnDarkModeHam" data-toggle="tooltip" data-placement="bottom" title="Zmień motyw">
             <i class="fa fa-sun-o" aria-hidden="true"></i>/<i class="fa fa-moon-o" aria-hidden="true"></i>
+    </div>
+    <div class="mobileMenu">       
          <button class="burg" aria-label="Menu">
                 <span class="burg__container" tabindex="-1">
                   <span class="burg__bars"></span>
                 </span>
               </button>
-
             <div class="menuHam">
                 <ul class="navHam">             
                     <li><a href="#" class="meHam"><i class="fa-solid fa-address-card"></i>o mnie</a></li>
@@ -261,6 +262,23 @@
                     <li><a href="#" class="conHam"><i class="fa-solid fa-comments"></i>kontakt</a></li>
                 </ul>
             </div>
+    </div>
+    <div id="conHam" class="contact">
+        <form
+            action="https://formspree.io/f/mlezyygj"
+            method="POST"
+>
+    <label>
+    Your email:
+    <input type="email" name="email">
+    </label>
+    <label>
+    Your message:
+    <textarea name="message"></textarea>
+    </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
     </div>
     <script src="dist/js/lightbox.js"></script>
     <script src="dist/js/lightbox-plus-jquery.min.js"></script>
