@@ -264,21 +264,50 @@
             </div>
     </div>
     <div id="conHam" class="contact">
-        <form
-            action="https://formspree.io/f/mlezyygj"
-            method="POST"
->
-    <label>
-    Your email:
-    <input type="email" name="email">
-    </label>
-    <label>
-    Your message:
-    <textarea name="message"></textarea>
-    </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+        <div class="form">
+            <div class="title">Kontakt</div>
+            <div class="subtitle">Chcesz się z nami skontaktować?</div>
+            <div class="subtitle">To jest idealne miejsce do tego!</div>
+            <form action="https://formspree.io/f/mlezyygj" method="post"
+            >
+            <div class="input-container ic1">
+              <input id="firstname" class="input" type="text" name="name" placeholder=" " />
+              <div class="cut"></div>
+              <label for="firstname" class="placeholder">Imię i nazwisko</label>
+            </div>
+ 
+            <div class="input-container ic2">
+              <input id="email" class="input" type="text" name="email" placeholder=" " />
+              <div class="cut cut-short"></div>
+              <label for="email" class="placeholder">Email</label>
+            </div>
+
+            <div class="input-container ic2">
+                <input id="message" class="input2" type="text"  name="message" placeholder=" "/>
+                <div class="cut2"></div>
+                <label for="message" class="placeholder" >Twoja wiadomość </label>
+              </div>
+            
+
+            
+
+            <button type="submit" class="submit">Wyślij</button>
+        </form>
+          </div>
+
+
+        <!-- <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mlezyygj" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Imię i Nazwisko</label>
+              <input type="text" name="name" id="full-name" placeholder="Uzupełnij imię oraz nazwisko" required="">
+              <label for="email-address">Adres e-mail</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="uzupełnij@email.pl" required="">
+              <label for="message">Wiadomość</label>
+              <textarea rows="8" name="message" id="message" placeholder="Twoja wiadmość" required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input type="submit" value="Wyślij">
+          </form> -->
     </div>
     <script src="dist/js/lightbox.js"></script>
     <script src="dist/js/lightbox-plus-jquery.min.js"></script>
