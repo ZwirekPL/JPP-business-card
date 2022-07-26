@@ -1,17 +1,4 @@
-$(".nav .menu li a").on("click", function () {
-  const goToSection = "#" + $(this).attr("class");
-
-  $("body, html").animate({
-    scrollTop: $(goToSection).offset().top - $("div.nav").height(),
-  });
-});
-
-$(".mobileMenu .menuHam .navHam li a").on("click", function () {
-  const goToSection = "#" + $(this).attr("class");
-  $("body, html").animate({
-    scrollTop: $(goToSection).offset().top,
-  });
-});
+// tutaj jquery menu
 
 // const screenWidth = $(window).width();
 // const meInMob = document.querySelector(".meIn");
@@ -114,6 +101,14 @@ if (screenWidth > 770) {
   detInGal.classList.add("active");
   achiev.classList.add("active");
 }
+
+// document.getElementById("btnMe").addEventListener("click", () => {
+//   const meintop = meIn.offsetTop;
+//   console.log(meintop);
+//   const meme = document.getElementById("meme");
+//   meme.scrollIntoView();
+// });
+
 // }
 
 //  else{
@@ -246,4 +241,19 @@ const burgerActivation = document.querySelector(".menuHam");
 menu.addEventListener("click", () => {
   menu.classList.toggle("burg--active");
   burgerActivation.classList.toggle("burger--active");
+});
+
+$(".nav .menu li a").on("click", function () {
+  const goToSection = "#" + $(this).attr("class");
+  // console.log(goToSection.offset.top);
+  $("body, html").animate({
+    scrollTop: $(goToSection).offset().top - $("div.nav").height(),
+  });
+});
+
+$(".mobileMenu .menuHam .navHam li a").on("click", function () {
+  const goToSectionMob = "#" + $(this).attr("id");
+  $("body, html").animate({
+    scrollTop: $(goToSectionMob).offset().top,
+  });
 });
