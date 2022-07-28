@@ -90,7 +90,7 @@ const scrolling = document.addEventListener("scroll", () => {
   }
 });
 
-if (screenWidth > 770) {
+if (screenWidth > 769) {
   scrolling;
 } else {
   meIn.classList.add("active");
@@ -100,6 +100,12 @@ if (screenWidth > 770) {
   detIn.classList.add("active");
   detInGal.classList.add("active");
   achiev.classList.add("active");
+}
+if ($(".mobileMenu").css("display") === "none") {
+  document.getElementById("meHam").setAttribute("id", "me");
+  document.getElementById("detHam").setAttribute("id", "detailing");
+  document.getElementById("evHam").setAttribute("id", "ev");
+  // document.getElementById("conHam").setAttribute("id", "conHam");
 }
 
 // document.getElementById("btnMe").addEventListener("click", () => {
@@ -234,6 +240,16 @@ document.querySelector(".btnDarkModeHam").addEventListener("click", (e) => {
 });
 // Dark mode burger end
 
+// contact button
+const contactBtn = document.getElementById("contactIconClosed");
+const contactBtnClose = document.getElementById("close");
+const contactForm = document.querySelector(".contactForm");
+contactBtn.addEventListener("click", () => {
+  contactForm.classList.toggle("contactForm-active");
+});
+contactBtnClose.addEventListener("click", () => {
+  contactForm.classList.toggle("contactForm-active");
+});
 // hamburger
 const menu = document.querySelector(".burg");
 const burgerActivation = document.querySelector(".menuHam");
@@ -242,6 +258,7 @@ menu.addEventListener("click", () => {
   menu.classList.toggle("burg--active");
   burgerActivation.classList.toggle("burger--active");
 });
+// end hamburger
 
 $(".nav .menu li a").on("click", function () {
   const goToSection = "#" + $(this).attr("class");
@@ -252,7 +269,7 @@ $(".nav .menu li a").on("click", function () {
 });
 
 $(".mobileMenu .menuHam .navHam li a").on("click", function () {
-  const goToSectionMob = "#" + $(this).attr("id");
+  const goToSectionMob = "#" + $(this).attr("class");
   $("body, html").animate({
     scrollTop: $(goToSectionMob).offset().top,
   });
