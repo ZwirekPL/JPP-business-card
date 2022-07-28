@@ -10,3 +10,7 @@ https://www.aurainweb.pl/jak-uzywac-media-query-kilka-przydatnych-przykladow-css
 @media only screen and (min-width: 845px) and (max-width: 911px){
 ...
 }
+
+
+http://wszystkoociasteczkach.pl/polityka-cookies/
+ https://www.cookie-checker.com/

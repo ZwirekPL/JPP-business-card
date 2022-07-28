@@ -22,46 +22,27 @@
   padding: 0;
 }
 body {
-  /* overflow-x: hidden; */
-  /* position: relative; */
   background-color: var(--backgroundColorBody);
 }
-/* html, body {
-    overflow-x: hidden;
-  } */
-
 div.wrap {
   margin: auto;
   max-width: var(--maxWidth930);
   font-family: "Oswald", sans-serif;
 }
-
 div.header {
-  /* display: flex; */
-  /* max-width: 800px; */
   width: 100%;
   height: 80vh;
   margin: auto;
-  /* background-color: #222222; */
-  /* align-items: center;
-    justify-content: center;
-    */
 }
-
 .headerjpg {
-  /* margin-top: 5%; */
   position: absolute;
   width: 100%;
-  /* height: 100%; */
   background-color: black;
-  /* opacity: 0.9; */
   max-width: var(--maxWidth930);
-  /* aspect-ratio: 16/9; */
 }
 .jpgDark {
   display: none;
 }
-
 .jpgDark-active {
   display: block;
   position: absolute;
@@ -70,7 +51,6 @@ div.header {
   background-color: black;
   opacity: 0.4;
   max-width: var(--maxWidth930);
-  aspect-ratio: 16/9;
 }
 .headerMobile {
   display: none;
@@ -78,9 +58,7 @@ div.header {
   max-width: 100%;
   left: 0;
 }
-
 /* hamburger */
-
 .burg {
   position: absolute;
   top: 2vh;
@@ -157,7 +135,6 @@ div.header {
   max-height: 59vh;
   max-width: 88vw;
 }
-
 .menuHam {
   display: none;
   line-height: 400%;
@@ -171,11 +148,9 @@ div.header {
   background-color: var(--backgroundColor);
   border-radius: 30px;
 }
-
 .menuHam.burger--active {
   display: flex;
 }
-
 .navHam {
   display: flex;
   flex-direction: column;
@@ -193,7 +168,6 @@ div.header {
   color: var(--colorTextNav);
   font-size: var(--burgerFS);
   transition: 0.3s;
-  /* color: black; */
 }
 .meHam:hover {
   color: var(--colorHover);
@@ -208,7 +182,6 @@ div.header {
   color: var(--colorTextNav);
   font-size: var(--burgerFS);
   transition: 0.3s;
-  /* color:black; */
 }
 .detHam:hover {
   color: var(--colorHover);
@@ -223,7 +196,6 @@ div.header {
   color: var(--colorTextNav);
   font-size: var(--burgerFS);
   transition: 0.3s;
-  /* color:black; */
 }
 .evHam:hover {
   color: var(--colorHover);
@@ -238,7 +210,6 @@ div.header {
   color: var(--colorTextNav);
   font-size: var(--burgerFS);
   transition: 0.3s;
-  /* color:black; */
 }
 .conHam:hover {
   color: var(--colorHover);
@@ -273,7 +244,6 @@ div.header {
   width: 100%;
   height: 100%;
 }
-
 .btnDarkModeHam {
   display: block;
   position: absolute;
@@ -287,9 +257,6 @@ div.header {
   cursor: pointer;
   transition: 0.3s;
 }
-/* .btnDarkModeHam:hover {
-    color: rgb(35, 35, 35);
-} */
 .darkModeHam {
   --colorTextNav: white;
   --colorText: rgb(186, 186, 186);
@@ -298,14 +265,12 @@ div.header {
   --colorTextNavGrey: grey;
   --backgroundColorBody: black;
 }
-
 .jpgDarkHam {
   display: none;
   position: absolute;
   max-width: 100%;
   left: 0;
 }
-
 .jpgDarkHam-active {
   display: block;
   position: absolute;
@@ -314,12 +279,9 @@ div.header {
   height: 66%;
   background-color: black;
   opacity: 0.4;
-  /* max-width: var(--maxWidth930); */
   z-index: 1;
 }
-
 /* endburg */
-
 div.nav {
   display: flex;
   justify-content: flex-end;
@@ -330,8 +292,6 @@ div.nav {
   width: 100%;
   height: 10vh;
   background-color: var(--backgroundColor);
-
-  /* display: none; */
 }
 
 .menu {
@@ -369,17 +329,14 @@ a.me {
   font-size: var(--menuFontSize);
   transition: 0.3s;
 }
-
 a.me:hover {
   color: var(--colorHover);
 }
-
 a.me > i {
   display: none;
   padding: 5px;
   font-size: 80%;
 }
-
 a.detailing {
   display: flex;
   align-items: center;
@@ -391,11 +348,9 @@ a.detailing {
   font-size: var(--menuFontSize);
   transition: 0.3s;
 }
-
 a.detailing:hover {
   color: var(--colorHover);
 }
-
 a.detailing > i {
   display: none;
   padding: 5px;
@@ -412,11 +367,9 @@ a.ev {
   font-size: var(--menuFontSize);
   transition: 0.3s;
 }
-
 a.ev:hover {
   color: var(--colorHover);
 }
-
 a.ev > i {
   display: none;
   padding: 5px;
@@ -433,23 +386,19 @@ a.contact {
   font-size: var(--menuFontSize);
   transition: 0.3s;
 }
-
 a.contact:hover {
   color: var(--colorHover);
 }
-
 a.contact > i {
   display: none;
   padding: 5px;
   font-size: 80%;
 }
-
 /* o mnie */
 section.me div.meIn {
   display: flex;
   flex-wrap: wrap;
   height: 50vh;
-  /* overflow: hidden; */
   transform: translateX(100vw);
   transition: 0.5s;
 }
@@ -513,8 +462,6 @@ section.me div.achiev {
   height: 50vh;
   align-items: center;
   justify-content: center;
-  /* transform: translateX(-100vw);
-    transition: .5s; */
   transform: scale(0);
   transition: 0.8s linear;
 }
@@ -528,7 +475,6 @@ div.achievHead {
   text-align: center;
   text-transform: uppercase;
 }
-
 div.achievInfo {
   text-transform: uppercase;
 }
@@ -570,7 +516,6 @@ div.detInfoHead {
   text-align: center;
   text-transform: uppercase;
 }
-
 div.gallery {
   display: flex;
   flex-wrap: wrap;
@@ -584,11 +529,9 @@ div.gallery::-webkit-scrollbar {
   width: 0.3em;
   height: 0.3em;
 }
-
 div.gallery::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
-
 div.gallery::-webkit-scrollbar-thumb {
   background-color: rgb(93, 86, 86);
   outline: 1px solid rgb(127, 130, 131);
@@ -603,7 +546,6 @@ div.detInfo p {
   font-size: var(--sectionFontSize);
   color: var(--colorText);
 }
-
 div.detHead {
   width: 100%;
   font-size: var(--sectionSemiHeadFontSize);
@@ -617,7 +559,6 @@ img.detPhoto {
   flex-basis: 40%;
   border-radius: 5%;
 }
-
 /* electric vehicle */
 section.ev div.evIn {
   display: flex;
@@ -634,7 +575,6 @@ div.evInfoHead {
   text-align: center;
   text-transform: uppercase;
 }
-
 div.evInfo {
   flex-basis: 75%;
   margin: 2% 0 0 0;
@@ -658,7 +598,6 @@ div.evHead {
   text-align: center;
   text-transform: uppercase;
 }
-
 img.evPhoto {
   max-height: 30vh;
   max-width: 15vw;
@@ -673,27 +612,6 @@ div.evkonInfo p {
   font-size: var(--sectionFontSize);
   color: var(--colorText);
 }
-/* .contactbtn{
-    position: absolute;
-        transform: translate(350%,540%);
-  
-}
-.btn1{
-    background-color: white;
-    cursor: pointer;
-    border: none;
-    text-transform: uppercase;
-    font-size: 2vw;
-    font-family: 'Oswald', sans-serif;
-    transition: .3s;
-
-}
-.btn1:hover{
-    border-bottom: black solid 3px;
-    border-top: black solid 3px;
-    color: lightgrey;
-} */
-
 div.footer {
   display: flex;
   justify-content: center;
@@ -722,7 +640,6 @@ div.footer {
 .contactForm-active {
   display: flex;
 }
-
 .form {
   background-color: var(--backgroundColor);
   border-radius: 20px;
@@ -777,14 +694,12 @@ div.footer {
   left: 0;
   top: 2px;
 }
-
 .title {
   color: #eee;
   font-family: sans-serif;
   font-size: 36px;
   font-weight: 600;
 }
-
 .subtitle {
   color: #eee;
   font-family: sans-serif;
@@ -792,21 +707,17 @@ div.footer {
   font-weight: 600;
   margin-top: 10px;
 }
-
 .input-container {
   height: 50px;
   position: relative;
   width: 100%;
 }
-
 .ic1 {
   margin-top: 40px;
 }
-
 .ic2 {
   margin-top: 30px;
 }
-
 .input {
   background-color: #303245;
   border-radius: 12px;
@@ -819,7 +730,6 @@ div.footer {
   padding: 4px 20px 0;
   width: 100%;
 }
-
 .input2 {
   background-color: #303245;
   border-radius: 12px;
@@ -832,7 +742,6 @@ div.footer {
   padding: 4px 20px 0;
   width: 100%;
 }
-
 .cut {
   background-color: #15172b;
   border-radius: 10px;
@@ -844,7 +753,6 @@ div.footer {
   transition: transform 200ms;
   width: 100px;
 }
-
 .cut2 {
   background-color: #15172b;
   border-radius: 10px;
@@ -856,21 +764,17 @@ div.footer {
   transition: transform 200ms;
   width: 115px;
 }
-
 .cut-short {
   width: 50px;
 }
-
 .input:focus ~ .cut,
 .input:not(:placeholder-shown) ~ .cut {
   transform: translateY(8px);
 }
-
 .input2:focus ~ .cut2,
 .input2:not(:placeholder-shown) ~ .cut2 {
   transform: translateY(8px);
 }
-
 .placeholder {
   color: #65657b;
   font-family: sans-serif;
@@ -882,33 +786,26 @@ div.footer {
   transition: transform 200ms, color 200ms;
   top: 20px;
 }
-
 .input:focus ~ .placeholder,
 .input:not(:placeholder-shown) ~ .placeholder {
   transform: translateY(-30px) translateX(10px) scale(0.75);
 }
-
 .input:not(:placeholder-shown) ~ .placeholder {
   color: #808097;
 }
-
 .input:focus ~ .placeholder {
   color: #dc2f55;
 }
-
 .input2:focus ~ .placeholder,
 .input2:not(:placeholder-shown) ~ .placeholder {
   transform: translateY(-30px) translateX(10px) scale(0.75);
 }
-
 .input2:not(:placeholder-shown) ~ .placeholder {
   color: #808097;
 }
-
 .input2:focus ~ .placeholder {
   color: #dc2f55;
 }
-
 .submit {
   background-color: #39f;
   border-radius: 12px;
@@ -926,7 +823,6 @@ div.footer {
 .submit:hover {
   background-color: #333;
 }
-
 .submit:active {
   background-color: #06b;
 }
@@ -947,7 +843,6 @@ div.footer {
   justify-content: center;
   align-items: center;
 }
-
 #contactIconClosed {
   color: var(--backgroundColorBody);
   cursor: pointer;
@@ -955,16 +850,13 @@ div.footer {
 #contactIconClosed:hover {
   color: var(--colorText);
 }
-
 section.me .meIn.active,
 section.me .eduIn.active,
 section.me .achiev.active,
 section.ev div.evkonIn.active,
 section.ev div.evIn.active {
   transform: translateX(0);
-  /* overflow: none; */
 }
-
 .darkMode {
   --colorTextNav: black;
   --colorText: rgb(186, 186, 186);
@@ -973,22 +865,16 @@ section.ev div.evIn.active {
   --backgroundColorBody: black;
 }
 @media only screen and (max-width: 319px) and (orientation: portrait) {
-  /* div.wrap {
-        max-width: 320px;
-        
-    } */
   :root {
     --maxWidth930: 320px;
   }
   body {
-    /* overflow-x: hidden; */
     position: relative;
   }
   html,
   body {
     overflow-x: hidden;
   }
-
   div.nav {
     display: none;
   }
@@ -1012,7 +898,6 @@ section.ev div.evIn.active {
   .darkModeMobile {
     display: block;
   }
-
   div.header {
     height: 150vw;
   }
@@ -1037,11 +922,9 @@ section.ev div.evIn.active {
   div.personalInfoHead {
     font-size: var(--sectionMobileHeadFontSize);
   }
-
   img.eduPhoto {
     max-height: 80vw;
     max-width: 80vw;
-    /* flex-basis: auto; */
     margin-right: 25px;
   }
   section.me div.eduIn {
@@ -1060,7 +943,6 @@ section.ev div.evIn.active {
   div.eduHead {
     font-size: var(--sectionMobileHeadFontSize);
   }
-
   section.me div.achiev {
     height: 100vw;
   }
@@ -1077,11 +959,9 @@ section.ev div.evIn.active {
   div.achievHead {
     font-size: var(--sectionMobileHeadFontSize);
   }
-
   img.detPhoto {
     max-height: 80vw;
     max-width: 80vw;
-    /* flex-basis: auto; */
   }
   section.detailing div.detIn {
     height: 180vw;
@@ -1103,11 +983,9 @@ section.ev div.evIn.active {
   div.detHead {
     font-size: var(--sectionMobileHeadFontSize);
   }
-
   img.evPhoto {
     max-height: 80vw;
     max-width: 80vw;
-    /* flex-basis: auto; */
     margin: 25px;
   }
   section.ev div.evIn {
@@ -1190,7 +1068,6 @@ section.ev div.evIn.active {
   .submit {
     margin-top: 58px;
   }
-
   .burg {
     top: 0;
     right: 0;
@@ -1205,17 +1082,11 @@ section.ev div.evIn.active {
     height: 4px;
   }
 }
-
 @media only screen and (max-width: 319px) and (orientation: landscape) {
-  /* div.wrap {
-        max-width: 320px;
-        
-    } */
   :root {
     --maxWidth930: 320px;
   }
   body {
-    /* overflow-x: hidden; */
     position: relative;
   }
   html,
@@ -1247,7 +1118,6 @@ section.ev div.evIn.active {
   .darkModeMobile {
     display: block;
   }
-
   div.header {
     height: 170vh;
   }
@@ -1272,11 +1142,9 @@ section.ev div.evIn.active {
   div.personalInfoHead {
     font-size: var(--sectionMobileHeadFontSize);
   }
-
   img.eduPhoto {
     max-height: 80vh;
     max-width: 80vw;
-    /* flex-basis: auto; */
     margin-right: 25px;
   }
   section.me div.eduIn {
@@ -1295,7 +1163,6 @@ section.ev div.evIn.active {
   div.eduHead {
     font-size: var(--sectionMobileHeadFontSize);
   }
-
   section.me div.achiev {
     height: 170vh;
   }
@@ -1312,11 +1179,9 @@ section.ev div.evIn.active {
   div.achievHead {
     font-size: var(--sectionMobileHeadFontSize);
   }
-
   img.detPhoto {
     max-height: 80vh;
     max-width: 80vw;
-    /* flex-basis: auto; */
   }
   section.detailing div.detIn {
     height: 190vh;
@@ -1338,11 +1203,9 @@ section.ev div.evIn.active {
   div.detHead {
     font-size: var(--sectionMobileHeadFontSize);
   }
-
   img.evPhoto {
     max-height: 80vh;
     max-width: 80vw;
-    /* flex-basis: auto; */
     margin: 25px;
   }
   section.ev div.evIn {
@@ -1429,7 +1292,6 @@ section.ev div.evIn.active {
     margin-top: 38px;
     height: 40px;
   }
-
   .burg {
     top: 0;
     right: 0;
@@ -1444,17 +1306,11 @@ section.ev div.evIn.active {
     height: 4px;
   }
 }
-
 @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
-  /* div.wrap {
-        max-width: 320px;
-        
-    } */
   :root {
     --maxWidth930: 320px;
   }
   body {
-    /* overflow-x: hidden; */
     position: relative;
   }
   html,
@@ -1481,7 +1337,6 @@ section.ev div.evIn.active {
   .darkModeMobile {
     display: block;
   }
-
   div.header {
     height: 150vw;
   }
@@ -1506,11 +1361,9 @@ section.ev div.evIn.active {
   div.personalInfoHead {
     font-size: calc(var(--sectionMobileHeadFontSize) / 1.2);
   }
-
   img.eduPhoto {
     max-height: 80vw;
     max-width: 80vw;
-    /* flex-basis: auto; */
   }
   section.me div.eduIn {
     height: 220vw;
@@ -1528,7 +1381,6 @@ section.ev div.evIn.active {
   div.eduHead {
     font-size: calc(var(--sectionMobileHeadFontSize) / 1.2);
   }
-
   section.me div.achiev {
     height: 100vw;
   }
@@ -1545,11 +1397,9 @@ section.ev div.evIn.active {
   div.achievHead {
     font-size: calc(var(--sectionMobileHeadFontSize) / 1.2);
   }
-
   img.detPhoto {
     max-height: 80vw;
     max-width: 80vw;
-    /* flex-basis: auto; */
   }
   section.detailing div.detIn {
     height: 220vw;
@@ -1571,11 +1421,9 @@ section.ev div.evIn.active {
   div.detHead {
     font-size: calc(var(--sectionMobileHeadFontSize) / 1.2);
   }
-
   img.evPhoto {
     max-height: 80vw;
     max-width: 80vw;
-    /* flex-basis: auto; */
   }
   section.ev div.evIn {
     height: 220vw;
@@ -1643,17 +1491,11 @@ section.ev div.evIn.active {
     height: 4px;
   }
 }
-
 @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
-  /* div.wrap {
-        max-width: 320px;
-        
-    } */
   :root {
     --maxWidth930: 320px;
   }
   body {
-    /* overflow-x: hidden; */
     position: relative;
   }
   html,
@@ -1680,7 +1522,6 @@ section.ev div.evIn.active {
   .darkModeMobile {
     display: block;
   }
-
   div.header {
     height: 150vw;
   }
@@ -1705,11 +1546,9 @@ section.ev div.evIn.active {
   div.personalInfoHead {
     font-size: calc(var(--sectionMobileHeadFontSize) / 1.2);
   }
-
   img.eduPhoto {
     max-height: 80vw;
     max-width: 80vw;
-    /* flex-basis: auto; */
   }
   section.me div.eduIn {
     height: 220vw;
@@ -1727,7 +1566,6 @@ section.ev div.evIn.active {
   div.eduHead {
     font-size: calc(var(--sectionMobileHeadFontSize) / 1.2);
   }
-
   section.me div.achiev {
     height: 100vw;
   }
@@ -1744,11 +1582,9 @@ section.ev div.evIn.active {
   div.achievHead {
     font-size: calc(var(--sectionMobileHeadFontSize) / 1.2);
   }
-
   img.detPhoto {
     max-height: 80vw;
     max-width: 80vw;
-    /* flex-basis: auto; */
   }
   section.detailing div.detIn {
     height: 220vw;
@@ -1770,11 +1606,9 @@ section.ev div.evIn.active {
   div.detHead {
     font-size: calc(var(--sectionMobileHeadFontSize) / 1.2);
   }
-
   img.evPhoto {
     max-height: 80vw;
     max-width: 80vw;
-    /* flex-basis: auto; */
   }
   section.ev div.evIn {
     height: 220vw;
@@ -1860,7 +1694,6 @@ section.ev div.evIn.active {
     margin-top: 45px;
     height: 40px;
   }
-
   .burg {
     top: 0;
     right: 0;
@@ -1875,17 +1708,11 @@ section.ev div.evIn.active {
     height: 4px;
   }
 }
-
 @media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
-  /* div.wrap {
-        max-width: 481px;
-    
-    } */
   :root {
     --maxWidth930: 481px;
   }
   body {
-    /* overflow-x: hidden; */
     position: relative;
   }
   html,
@@ -1931,11 +1758,9 @@ section.ev div.evIn.active {
   div.personalInfoHead {
     font-size: var(--sectionMobileHeadFontSize);
   }
-
   img.eduPhoto {
     max-height: 80vw;
     max-width: 80vw;
-    /* flex-basis: auto; */
     margin-right: 45px;
   }
   section.me div.eduIn {
@@ -1954,7 +1779,6 @@ section.ev div.evIn.active {
   div.eduHead {
     font-size: var(--sectionMobileHeadFontSize);
   }
-
   section.me div.achiev {
     height: 100vh;
   }
@@ -1971,7 +1795,6 @@ section.ev div.evIn.active {
   div.achievHead {
     font-size: var(--sectionMobileHeadFontSize);
   }
-
   img.detPhoto {
     max-height: 80vw;
     max-width: 80vw;
@@ -1996,11 +1819,9 @@ section.ev div.evIn.active {
   div.detHead {
     font-size: var(--sectionMobileHeadFontSize);
   }
-
   img.evPhoto {
     max-height: 80vw;
     max-width: 80vw;
-    /* flex-basis: auto; */
     margin: 45px;
   }
   section.ev div.evIn {
@@ -2090,17 +1911,12 @@ section.ev div.evIn.active {
     height: 50px;
   }
 }
-
 @media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
-  /* div.wrap {
-        max-width: 769px;
-    } */
   :root {
     --maxWidth930: 500px;
     --btnDarkMenu: 0px 20px 0px 0px;
   }
   body {
-    /* overflow-x: hidden; */
     position: relative;
   }
   html,
@@ -2140,10 +1956,6 @@ section.ev div.evIn.active {
   .headerjpg {
     display: block;
   }
-  /* .headerMobile{
-        display: flex;
-        height: 50vh;
-    } */
   div.header {
     height: 65vw;
   }
@@ -2155,7 +1967,6 @@ section.ev div.evIn.active {
     max-width: 40vw;
     margin-left: 150%;
   }
-
   div.personalInfo p {
     margin: auto;
     font-size: calc(var(--sectionMobileFontSize) / 2);
@@ -2169,7 +1980,6 @@ section.ev div.evIn.active {
   div.personalInfoHead {
     font-size: calc(var(--sectionMobileHeadFontSize) / 2);
   }
-
   img.eduPhoto {
     max-height: 40vw;
     max-width: 40vw;
@@ -2191,7 +2001,6 @@ section.ev div.evIn.active {
   div.eduHead {
     font-size: calc(var(--sectionMobileHeadFontSize) / 2);
   }
-
   section.me div.achiev {
     height: 150vh;
   }
@@ -2208,7 +2017,6 @@ section.ev div.evIn.active {
   div.achievHead {
     font-size: calc(var(--sectionMobileHeadFontSize) / 2);
   }
-
   img.detPhoto {
     max-height: 40vw;
     max-width: 40vw;
@@ -2233,7 +2041,6 @@ section.ev div.evIn.active {
   div.detHead {
     font-size: calc(var(--sectionMobileHeadFontSize) / 2);
   }
-
   img.evPhoto {
     max-height: 40vw;
     max-width: 40vw;
@@ -2325,7 +2132,6 @@ section.ev div.evIn.active {
     margin-top: 38px;
     height: 40px;
   }
-
   .burg {
     top: 0;
     right: 0;
@@ -2340,11 +2146,7 @@ section.ev div.evIn.active {
     height: 4px;
   }
 }
-
 @media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
-  /* div.wrap {
-        max-width: 769px;
-    } */
   :root {
     --maxWidth930: 500px;
     --btnDarkMenu: 0px 20px 0px 0px;
@@ -2386,7 +2188,6 @@ section.ev div.evIn.active {
     font-size: var(--sectionHeadFontSize);
     height: 5vw;
   }
-
   img.eduPhoto {
     max-height: 30vw;
     max-width: 30vw;
@@ -2409,7 +2210,6 @@ section.ev div.evIn.active {
     font-size: var(--sectionHeadFontSize);
     height: 5vw;
   }
-
   section.me div.achiev {
     height: 40vh;
   }
@@ -2427,7 +2227,6 @@ section.ev div.evIn.active {
     font-size: var(--sectionHeadFontSize);
     height: 5vw;
   }
-
   img.detPhoto {
     max-height: 50vw;
     max-width: 50vw;
@@ -2453,11 +2252,9 @@ section.ev div.evIn.active {
     font-size: var(--sectionHeadFontSize);
     height: 5vw;
   }
-
   img.evPhoto {
     max-height: 50vw;
     max-width: 50vw;
-    /* flex-basis: auto; */
     margin: 30px;
   }
   section.ev div.evIn {
@@ -2550,9 +2347,6 @@ section.ev div.evIn.active {
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-  /* div.wrap {
-        max-width: 769px;
-    } */
   :root {
     --maxWidth930: 500px;
     --btnDarkMenu: 0px 20px 0px 0px;
@@ -2560,7 +2354,6 @@ section.ev div.evIn.active {
   .btnDarkMode {
     padding: 0;
   }
-
   img.personalPhoto {
     max-height: 17vw;
     max-width: 20vw;
@@ -2595,7 +2388,6 @@ section.ev div.evIn.active {
     font-size: var(--sectionHeadFontSize);
     height: 5vw;
   }
-
   img.eduPhoto {
     max-height: 30vw;
     max-width: 30vw;
@@ -2618,7 +2410,6 @@ section.ev div.evIn.active {
     font-size: var(--sectionHeadFontSize);
     height: 5vw;
   }
-
   section.me div.achiev {
     height: 50vh;
   }
@@ -2636,7 +2427,6 @@ section.ev div.evIn.active {
     font-size: var(--sectionHeadFontSize);
     height: 5vw;
   }
-
   img.detPhoto {
     max-height: 50vw;
     max-width: 50vw;
@@ -2662,11 +2452,9 @@ section.ev div.evIn.active {
     font-size: var(--sectionHeadFontSize);
     height: 5vw;
   }
-
   img.evPhoto {
     max-height: 45vw;
     max-width: 45vw;
-    /* flex-basis: auto; */
     margin: 30px;
   }
   section.ev div.evIn {
@@ -2759,9 +2547,6 @@ section.ev div.evIn.active {
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  /* div.wrap {
-        max-width: 1025px;
-    } */
   :root {
     --maxWidth930: 650px;
     --btnDarkMenu: 0px 100px 0px 0px;
@@ -2844,9 +2629,6 @@ section.ev div.evIn.active {
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
-  /* div.wrap {
-        max-width: 1201px;
-    } */
   :root {
     --maxWidth930: 800px;
   }
@@ -2908,9 +2690,6 @@ section.ev div.evIn.active {
   }
 }
 @media only screen and (min-width: 1401px) {
-  /* div.wrap {
-        max-width: 1201px;
-    } */
   :root {
     --maxWidth930: 1100px;
   }
