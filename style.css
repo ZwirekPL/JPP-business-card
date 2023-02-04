@@ -1391,7 +1391,7 @@ section.ev div.evIn.active {
     font-size: calc(var(--sectionMobileHeadFontSize) / 1.2);
   }
   section.me div.achiev {
-    height: 100vw;
+    height: 150vw;
   }
   div.achievInfo p {
     margin: auto;
@@ -1411,7 +1411,7 @@ section.ev div.evIn.active {
     max-width: 80vw;
   }
   section.detailing div.detIn {
-    height: 220vw;
+    height: 300vw;
   }
   div.detInfo p {
     margin: auto;
@@ -1466,6 +1466,15 @@ section.ev div.evIn.active {
   div.evkonInfo {
     flex-basis: auto;
     margin-left: 0;
+  }
+  div.evkonInfoList {
+    margin-left: 0;
+  }
+  div.evkonInfoList p {
+    margin-left: 0;
+    font-size: var(--sectionMobileFontSize);
+    width: 90%;
+    text-align: justify;
   }
   div.footer {
     height: 8vh;
@@ -1652,6 +1661,7 @@ section.ev div.evIn.active {
     flex-basis: auto;
     margin-left: 0;
   }
+
   div.footer {
     height: 8vh;
   }
