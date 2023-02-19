@@ -3,6 +3,8 @@
 
 The first website written by me as part of learning frontend. A business card page that was supposed to have a simple HTML structure and basic JS elements.
 
+Detailingownia is a company dealing with professional car cosmetics.
+
 
 ## Features
 
